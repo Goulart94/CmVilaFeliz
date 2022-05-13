@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+* button:hover {
+  cursor: pointer;
+}
+
+* a:hover {
+  cursor: pointer;
+}
+
+:root {
+  --gray-50: #F8FCF7;
+  --gray-150: #f0f5ef;
+  --green-300: #7CEB60;
+  --pink-300: #eb63ce;
+  --gray-900: #343434;
+}
+
+body {
+  background-color: var(--gray-50);
+  font-family: Roboto Condensed, sans-serif;
+  color: var(--gray-900);
+}
+
+.ContaineHeader {
+  width: 100%;
+  height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: var(--gray-50);
+  border-bottom: 2px solid var(--gray-900);
+}
+
+.ContaineHeader .logo {
+  margin-bottom: 16px;
+}
+
+.ContaineHeader .logo img {
+  margin-left: 162px;
+}
+
+.ContaineHeader .navBar nav {
+  margin-right: 100px;
+}
+
+.ContaineHeader .navBar nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ContaineHeader .navBar nav ul li {
+  margin-left: 35px;
+}
+
+.containerSectionOne {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/imgSection1.jpg");
+  background-size: cover;
+}
+
+.containerSectionOne .containerImg {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.containerSectionOne .containerImg img {
+  margin-top: 140px;
+}
+
+.containerSectionTwo {
+  width: 100%;
+}
+
+.containerSectionTwo img {
+  height: 82vh;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.containerSectionTwo .news {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 10;
+  color: var(--gray-50);
+}
+
+.containerSectionTwo .news .now {
+  margin-left: 10.5%;
+  max-width: 180px;
+  padding: 5px;
+  background-color: var(--pink-300);
+}
+
+.containerSectionTwo .news .allNews {
+  max-width: 150px;
+  margin-left: 10.5%;
+  padding: 5px;
+  background-color: var(--green-300);
+}
+
+.containerSectionTwo .containerText {
+  max-height: 500px;
+  margin: 0 auto;
+  background-color: rgba(52, 52, 52, 0.8);
+  border-radius: 10px;
+  padding: 17px;
+  overflow: hidden;
+}
+
+.containerSectionTwo .containerText h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: left;
+  color: var(--gray-50);
+}
+
+.containerSectionTwo .containerText p {
+  height: 200px;
+  text-align: left;
+  font-size: 16px;
+  color: var(--gray-50);
+  overflow: hidden;
+}
+
+.containerSectionTwo .buttomSlider {
+  font-size: 90px;
+  color: var(--green-300);
+}
+
+.containerSectionTwo .buttomInfo {
+  float: right;
+  color: var(--gray-900);
+  background: var(--gray-50);
+  border-radius: 10px;
+  padding: 8px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.containerSectionTwo .buttomInfo span {
+  color: var(--pink-300);
+  font-weight: 700;
+}
+
+.containerSectionTwo .buttomInfo:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.conteinerSectiontree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  height: 81vh;
+  background: url(../images/formas.png);
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+.conteinerSectiontree .contentPhone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.conteinerSectiontree .contentPhone div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+}
+
+.conteinerSectiontree .contentPhone div img {
+  margin-right: 11%;
+  height: 500px;
+}
+
+.conteinerSectiontree .containerTextAPP {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.conteinerSectiontree .containerTextAPP .textApp {
+  max-width: 600px;
+  padding: 16px;
+}
+
+.conteinerSectiontree .containerTextAPP .textApp .containerButtom {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.conteinerSectiontree .containerTextAPP .textApp .containerButtom .buttomPlayStore {
+  width: 200px;
+  padding: 16px;
+  border-radius: 20px;
+  background: var(--green-300);
+  font-weight: 700;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.conteinerSectiontree .containerTextAPP .textApp .containerButtom .buttomAppStore {
+  width: 200px;
+  padding: 16px;
+  border-radius: 20px;
+  background: var(--pink-300);
+  font-weight: 700;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.conteinerSectiontree .containerTextAPP .textApp .buttomPlayStore:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.conteinerSectiontree .containerTextAPP .textApp .buttomAppStore:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.bgGray150 {
+  background: var(--gray-150);
+}
+
+.bgGray50 {
+  background: var(--gray-50);
+}
+
+.containerSection {
+  width: 100%;
+  height: 90vh;
+}
+
+.containerSection .contentHeader {
+  width: 100%;
+  height: 22%;
+}
+
+.containerSection .contentHeader .divTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.containerSection .contentHeader .divTitle .title {
+  position: absolute;
+  bottom: 0;
+  font-weight: 700;
+  font-size: 38px;
+}
+
+.containerSection .contentHeader .divTitle .formaLarge {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 8px;
+  background-color: var(--pink-300);
+}
+
+.containerSection .contentHeader .formaContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.containerSection .contentHeader .formaContent .formaSmall {
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  height: 70%;
+  background-color: var(--pink-300);
+}
+
+.containerSection .contentShortcuts {
+  width: 100%;
+  height: 55%;
+}
+
+.containerSection .contentShortcuts .shortcuts {
+  height: 100%;
+  background: var(--gray-50);
+}
+
+.containerSection .contentShortcuts .shortcuts h3 {
+  font-weight: 400;
+  background: var(--green-300);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.containerSection .contentShortcuts .shortcuts span {
+  margin: 20px;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.containerSection .contentShortcuts .shortcuts ul {
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+.containerSection .contentShortcuts .shortcuts ul li {
+  margin-bottom: 15px;
+  margin-right: 15px;
+  border-bottom: 1px solid var(--pink-300);
+}
+
+.containerSection .contentShortcuts .shortcuts a:hover {
+  color: #eb63ce;
+}
+
+.contentAboutUs {
+  width: 100%;
+  height: 70%;
+}
+
+.contentAboutUs .containerText {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contentAboutUs .containerText .contentText {
+  margin: 0 auto;
+  max-width: 600px;
+  height: 90%;
+}
+
+.contentAboutUs .containerText .contentText p {
+  padding: 16px;
+  height: 90%;
+  overflow: hidden;
+}
+
+.contentAboutUs .containerImg {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contentAboutUs .containerImg .contentImg {
+  margin: 0 auto;
+  max-width: 600px;
+  height: 90%;
+}
+
+.contentAboutUs .containerImg .contentImg img {
+  height: 100%;
+}
+/*# sourceMappingURL=app.css.map */
