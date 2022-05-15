@@ -174,12 +174,11 @@ body {
       color: var(--pink-300);
       font-weight: 700;
     }
-     
   }
+
   .buttomInfo:hover {
     transform: scale(1.2);
   }
- 
 
 }
 
@@ -366,7 +365,7 @@ body {
 }
 
 
-//section 5 && section6-------------------------------
+//section 5-------------------------------
 
 .contentAboutUs {
   width: 100%;
@@ -394,9 +393,6 @@ body {
         padding-right: 16px;
         height: 80%;
         overflow: hidden;
-        span{
-          font-weight: 700;
-        }
       }
 
       .buttomKnowMore{
@@ -405,14 +401,16 @@ body {
         bottom: 0;
         padding: 10px 20px 10px 20px;
         border-radius: 10px;
-        border: 3px solid var(--green-300);
+        border: 2px solid var(--green-300);
         font-weight: 700;
         span{
           color: var(--pink-300);
         }
         transition: 0.3s;
       }
-     
+      .buttomKnowMore:hover{
+        transform: scale(1.1);
+      }
 
 
     }

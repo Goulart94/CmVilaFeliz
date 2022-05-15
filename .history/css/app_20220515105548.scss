@@ -12,6 +12,7 @@
 
   button:hover {
     cursor: pointer;
+    
   }
 
   a:hover {
@@ -174,11 +175,11 @@ body {
       color: var(--pink-300);
       font-weight: 700;
     }
-     
-  }
-  .buttomInfo:hover {
+     .buttomInfo:hover {
     transform: scale(1.2);
   }
+  }
+
  
 
 }
@@ -366,7 +367,7 @@ body {
 }
 
 
-//section 5 && section6-------------------------------
+//section 5-------------------------------
 
 .contentAboutUs {
   width: 100%;

@@ -174,12 +174,11 @@ body {
       color: var(--pink-300);
       font-weight: 700;
     }
-     
   }
+
   .buttomInfo:hover {
     transform: scale(1.2);
   }
- 
 
 }
 
@@ -366,7 +365,7 @@ body {
 }
 
 
-//section 5 && section6-------------------------------
+//section 5-------------------------------
 
 .contentAboutUs {
   width: 100%;
@@ -412,7 +411,9 @@ body {
         }
         transition: 0.3s;
       }
-     
+      .buttomKnowMore:hover{
+        transform: scale(1.1);
+      }
 
 
     }
