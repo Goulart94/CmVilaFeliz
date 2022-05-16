@@ -6175,7 +6175,6 @@ select:not([multiple]) {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 10;
-  padding: 1rem;
   color: #fefefe;
 }
 
