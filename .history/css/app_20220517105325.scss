@@ -1,0 +1,644 @@
+//style Globol
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--gray-900);
+  box-sizing: border-box;
+
+
+}
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  a:hover {
+    cursor: pointer;
+  }
+
+//colors
+:root {
+
+
+  --white: #FFFFFF;
+  --gray-150: #f0f5ef;
+  --green-300: #8FC269;
+  --blue-300: #00B5DB;
+  --gray-900: #343434;
+}
+
+//Fonts Google
+
+body {
+  background-color: var(--white);
+  font-family: Roboto Condensed, sans-serif;
+  color: var(--gray-900);
+}
+
+//Header ---------------------------------
+
+.ContaineHeader {
+  width: 100%;
+  height: 140px;
+
+  display: flex;
+  align-items: flex-end;
+  background-color: var(--white);
+  
+
+
+
+  .logo {
+    margin-bottom: 16px;
+
+    img {
+      margin-left: 162px;
+      max-width: 450px;
+    }
+
+  }
+
+  .navBar {
+    nav {
+      margin-right: 100px;
+
+      ul {
+        display: flex;
+        list-style-type: none;
+        justify-items: flex-end;
+
+        li {
+
+          margin-bottom: 16px;
+          margin-left: 35px;
+
+           a{
+            
+            line-height: 83px;
+            height: 52px;
+            margin-left: 16px;
+            padding: 1px;
+            display: block;
+            position: relative;
+            font-weight: bold;
+            border-top: 3px solid var(--white);
+            border-radius: 2px;
+            
+            transition: 0.3s;
+           
+           }
+          a:hover{
+            
+            border-top: 3px solid var(--blue-300);
+        
+          }
+          
+          .active{
+            line-height: 5rem;
+            border-top: 3px solid var(--green-300);
+            border-radius: 2px;
+
+         }
+         
+         &.active::after{
+             content: '';
+             border-top: 3px solid var(--green-300);
+             border-radius: 2px;
+             width: 100%;
+             position: absolute;  
+
+         }
+            
+        }
+      }
+    }
+  }
+}
+
+//Section 1-----------------------------------------------------
+
+
+.containerSectionOne {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/imgSection1.jpg");
+  background-size: cover;
+
+  .containerImg {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+    img {
+      margin-top: 140px;
+    }
+  }
+}
+
+//section 2, foi alterado o código base de alguns elementos do Foundation. (cor e text e buttom alterados para melhorar a acessibilidade.)
+.containerSectionTwo {
+  width: 100%;
+
+
+  img {
+    height: 700px;
+    object-fit: fill;
+  }
+
+  .news {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    color: var(--white);
+
+    .now {
+      color: var(--white);
+      margin-left: 10.5%;
+      max-width: 180px;
+      padding: 5px;
+
+      background-color: var(--blue-300)
+    }
+
+    .allNews {
+      color: var(--white);
+      max-width: 150px;
+      margin-left: 10.5%;
+      padding: 5px;
+      background-color: var(--green-300)
+    }
+    .allNews:hover{
+      cursor: pointer;
+      font-weight: 700;
+    }
+  }
+
+  .containerText {
+    max-height: 500px;
+    margin: 0 auto;
+    background-color: rgba(52, 52, 52, 0.8);
+    border-radius: 10px;
+    padding: 17px;
+    overflow: hidden;
+
+    h1 {
+
+      font-size: 48px;
+      font-weight: bold;
+      text-align: left;
+      color: var(--white);
+    }
+
+    p {
+      height: 200px;
+      text-align: left;
+      font-size: 16px;
+      color: var(--white);
+      overflow: hidden;
+
+    }
+  }
+
+  .buttomSlider {
+    font-size: 90px;
+    color: var(--green-300);
+  }
+
+  .buttomInfo{
+    float: right;
+    color: var(--gray-900);
+    background: var(--white);
+    z-index: 9999999 !important;
+
+    border-radius: 10px;
+    padding: 8px;
+    transition: 0.3s;
+
+    span {
+      color: var(--blue-300);
+      font-weight: 700;
+    }
+
+    &:hover{
+      transform:  scale(1.2) !important;
+    }
+     
+  }
+  .buttomInfo:hover{
+    cursor: pointer;
+    transform:  scale(1.2) !important; 
+  }
+ 
+
+}
+
+//sectio 3----------------------------------------*
+
+
+.conteinerSectiontree {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 700px;
+  background: url(../images/formas.png);
+  background-size: cover;
+  background-size: 100% 100%;
+
+  .contentPhone {
+
+    display: flex;
+    position: relative;
+
+    div {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      bottom: 0;
+
+      img {
+        margin-right: 15%;
+        max-height: 600px;
+      }
+    }
+  }
+
+  .containerTextAPP {
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 30px;
+
+    .textApp {
+      max-width: 600px;
+
+      padding: 16px;
+
+      .containerButtom {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .buttomPlayStore {
+          width: 200px;
+          padding: 16px;
+          border-radius: 20px;
+          background: var(--green-300);
+          font-weight: 700;
+          transition: 0.3s;
+        }
+
+        .buttomAppStore {
+          width: 200px;
+          padding: 16px;
+          border-radius: 20px;
+          background: var(--blue-300);
+          font-weight: 700;
+          transition: 0.3s;
+        }
+      }
+
+      .buttomPlayStore:hover {
+        transform: scale(1.1);
+
+      }
+
+      .buttomAppStore:hover {
+        transform: scale(1.1);
+      }
+
+
+    }
+
+  }
+
+}
+
+
+
+//section 4, foi usado classes da section nas demais section para criação das formas do header---*
+.bgGray150 {
+  background: var(--gray-150);
+}
+
+.bgGray50 {
+  background: var(--white);
+}
+//formas cabeçalho das sections 4, 5, 6
+.ruleGreen{
+  width: 100%;
+  height: 43.8px;
+  background: var(--green-300);
+}
+
+.containerSection {
+  width: 100%;
+  height: 700px;
+
+  .contentHeader {
+    width: 100%;
+    height: 15%;
+
+
+    .divTitle {
+      display: flex;
+      position: relative;
+
+      .title {
+        position: absolute;
+        bottom: 0;
+        font-weight: 700;
+        font-size: 38px;
+      }
+
+
+      .formaLarge {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 8px;
+        background-color: var(--blue-300);
+      }
+    }
+
+    .formaContent {
+      display: flex;
+      position: relative;
+
+
+      .formaSmall {
+        position: absolute;
+        bottom: 0;
+        width: 20px;
+        height: 70%;
+        background-color: var(--blue-300);
+      }
+    }
+  }
+/// end.*
+
+  .contentShortcuts {
+
+    width: 100%;
+    
+    
+
+    .shortcuts {
+      height: 100%;
+      padding-bottom: 20px;
+      background: var(--white);
+
+
+      h3 {
+
+        font-weight: 400;
+        background: var(--green-300);
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      span {
+        margin: 20px;
+        font-size: 21px;
+        font-weight: 700;
+      }
+
+      ul {
+        margin-top: 20px;
+        list-style-type: none;
+
+        li {
+          margin-bottom: 15px;
+          margin-right: 15px;
+          border-bottom: 1px solid var(--blue-300);
+        }
+      }
+
+      a:hover {
+        font-weight: 700;
+      }
+    }
+  }
+  
+  .shortcutsDirect{
+    margin-top: 20px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+
+     .link{
+    background: var(--white);
+     display:flex;
+     align-items: center;
+     text-align: center;
+     width: 22%;
+     height: 90%;
+     border: 3px solid var(--blue-300);
+     border-radius: 10px;
+     transition: 0.3s;
+      span{
+
+        margin: 0 auto;
+      }
+     }
+     .link:hover{
+       cursor: pointer;
+       transform: scale(1.1);
+     }
+
+  }
+  
+
+}
+
+
+//section 5 && section 6-------------------------------*
+
+.contentAboutUs {
+  width: 100%;
+  height: auto;
+
+
+  .containerText {
+    height: 500px;
+    display: flex;
+    align-items: center;
+
+
+    .contentText {
+      margin: 0 auto;
+      max-width: 600px;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      
+
+      p {
+        margin-bottom: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
+        height: 80%;
+        overflow: hidden;
+        span{
+          font-weight: 700;
+        }
+      }
+
+      .buttomKnowMore {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 10px 20px 10px 20px;
+        border-radius: 10px;
+        border: 3px solid var(--green-300);
+        font-weight: 700;
+        span{
+          color: var(--blue-300);
+        }
+        transition: 0.3s;
+        
+      }
+      .buttomKnowMore:hover{
+          transform: scale(1.1);
+        }
+
+    }
+  }
+
+
+  .containerImg {
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .contentImg {
+      margin-left: 20px;
+      height: 90%;
+
+      img {
+  
+        height: 100%;
+      }
+    }
+
+  }
+
+}
+
+//section 7 --------------------------------------------*
+
+.contentschedule{
+   width: 100%;
+}
+
+
+.contentDates{
+  width: 100%;
+  max-height: 510px;
+  display: flex;
+  flex-direction: column;
+
+  
+     
+     .allDates{
+       color: #00B5DB;
+       font-weight: 700;
+       margin: 0 30px 20px 0;
+       padding-bottom: 5px;
+       max-width: 250px;
+       float: right;
+       border-bottom: 3px solid var(--green-300);
+      
+     }
+     
+
+
+}
+
+.buttomPreviousSlider{
+  font-size: 90px;
+  color: var(--green-300);
+  float: left;
+ 
+}
+.buttomNextSlider {
+  font-size: 90px;
+  color: var(--green-300);
+  float:right;
+  width: auto;
+ 
+}
+
+.contentSlider{
+  width: 90%;
+  height: 450px;
+  margin: 0 auto;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .news{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 210px;
+    height: 380px;
+    overflow: hidden;
+    background-color: var(--white);
+    
+     .containerImg{
+       
+       width: 100%;
+       height: 250px;
+       img{
+         width:100% ;
+         height: 250px;
+       }
+     }
+     
+
+    .infoNews{
+      padding: 0;
+      margin: 10px;
+      list-style-type: none;
+      
+
+      .title{
+        font-size: 21px;
+        margin-bottom: 10px;
+      }
+      .date{
+        font-size: 18px;
+      }
+      .place{
+        font-size: 14px;
+      }
+    }
+  }
+  .news:hover{
+    cursor: pointer;
+  }
+
+}
+
+
+//footer-----------------------------------------------
+
+.footer{
+  width: 100%;
+  height: 300px;
+  background: #343434;
+}

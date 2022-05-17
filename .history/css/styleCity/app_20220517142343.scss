@@ -1,0 +1,342 @@
+//style Globol
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--gray-900);
+    box-sizing: border-box;
+  
+  
+  }
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+  
+    button:hover {
+      cursor: pointer;
+    }
+  
+    a:hover {
+      cursor: pointer;
+    }
+  
+  //colors
+  :root {
+  
+  
+    --white: #FFFFFF;
+    --gray-150: #f0f5ef;
+    --green-300: #8FC269;
+    --blue-300: #00B5DB;
+    --gray-900: #343434;
+  }
+  
+  //Fonts Google
+  
+  body {
+    background-color: var(--white);
+    font-family: Roboto Condensed, sans-serif;
+    color: var(--gray-900);
+  }
+  
+  //Header ---------------------------------
+  
+  .ContaineHeader {
+    width: 100%;
+    height: 140px;
+  
+    display: flex;
+    align-items: flex-end;
+    background-color: var(--white);
+    
+  
+  
+  
+    .logo {
+      margin-bottom: 16px;
+  
+      img {
+        margin-left: 162px;
+        max-width: 450px;
+      }
+  
+    }
+  
+    .navBar {
+      nav {
+        margin-right: 100px;
+  
+        ul {
+          display: flex;
+          list-style-type: none;
+          justify-items: flex-end;
+  
+          li {
+  
+            margin-bottom: 16px;
+            margin-left: 35px;
+  
+             a{
+              
+              line-height: 83px;
+              height: 52px;
+              margin-left: 16px;
+              padding: 1px;
+              display: block;
+              position: relative;
+              font-weight: bold;
+              border-top: 3px solid var(--white);
+              border-radius: 2px;
+              
+              transition: 0.3s;
+  
+              i{
+                margin-right: 10px;
+                color: var(--gray-900);
+              }
+             
+             }
+            a:hover{
+              
+              border-top: 3px solid var(--blue-300);
+          
+            }
+            
+            .active{
+              line-height: 5rem;
+              border-top: 3px solid var(--green-300);
+              border-radius: 2px;
+  
+           }
+           
+           &.active::after{
+               content: '';
+               border-top: 3px solid var(--green-300);
+               border-radius: 2px;
+               width: 100%;
+               position: absolute;  
+  
+           }
+              
+          }
+        }
+      }
+    }
+  }
+  
+  //Section 1-----------------------------------------------------
+  
+  
+  .containerSectionOne {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/imgSection1.jpg");
+    background-size: cover;
+  
+    .containerImg {
+      width: 65%;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+  
+      img {
+        margin-top: 140px;
+      }
+    }
+  }
+  
+  //section 2, foi alterado o código base de alguns elementos do Foundation. (cor e text e buttom alterados para melhorar a acessibilidade.)
+  .containerSectionTwo {
+    width: 100%;
+  
+  
+    img {
+      height: 700px;
+      object-fit: fill;
+    }
+  
+    .news {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      z-index: 10;
+      color: var(--white);
+  
+      .now {
+        color: var(--white);
+        margin-left: 10.5%;
+        max-width: 180px;
+        padding: 5px;
+  
+        background-color: var(--blue-300)
+      }
+  
+      .allNews {
+        color: var(--white);
+        max-width: 150px;
+        margin-left: 10.5%;
+        padding: 5px;
+        background-color: var(--green-300)
+      }
+      .allNews:hover{
+        cursor: pointer;
+        font-weight: 700;
+      }
+    }
+  
+    .containerText {
+      max-height: 500px;
+      margin: 0 auto;
+      background-color: rgba(52, 52, 52, 0.8);
+      border-radius: 10px;
+      padding: 17px;
+      overflow: hidden;
+  
+      h1 {
+  
+        font-size: 48px;
+        font-weight: bold;
+        text-align: left;
+        color: var(--white);
+      }
+  
+      p {
+        height: 200px;
+        text-align: left;
+        font-size: 16px;
+        color: var(--white);
+        overflow: hidden;
+  
+      }
+    }
+  
+    .buttomSlider {
+      font-size: 90px;
+      color: var(--green-300);
+    }
+  
+    .buttomInfo{
+      float: right;
+      color: var(--gray-900);
+      background: var(--white);
+      z-index: 9999999 !important;
+  
+      border-radius: 10px;
+      padding: 8px;
+      transition: 0.3s;
+  
+      span {
+        color: var(--blue-300);
+        font-weight: 700;
+      }
+  
+      &:hover{
+        transform:  scale(1.2) !important;
+      }
+       
+    }
+    .buttomInfo:hover{
+      cursor: pointer;
+      transform:  scale(1.2) !important; 
+    }
+   
+  
+  }
+  
+  //sectio 3----------------------------------------*
+  
+  
+  .conteinerSectiontree {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 700px;
+    background: url(../images/formas.png);
+    background-size: cover;
+    background-size: 100% 100%;
+  
+    .contentPhone {
+  
+      display: flex;
+      position: relative;
+  
+      div {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        bottom: 0;
+  
+        img {
+          margin-right: 15%;
+          max-height: 600px;
+        }
+      }
+    }
+  
+    .containerTextAPP {
+  
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      margin-top: 30px;
+  
+      .textApp {
+        max-width: 600px;
+  
+        padding: 16px;
+  
+        .containerButtom {
+          width: 80%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+  
+          .buttomPlayStore {
+            width: 200px;
+            padding: 16px;
+            border-radius: 20px;
+            background: var(--green-300);
+            font-weight: 700;
+            transition: 0.3s;
+          }
+  
+          .buttomAppStore {
+            width: 200px;
+            padding: 16px;
+            border-radius: 20px;
+            background: var(--blue-300);
+            font-weight: 700;
+            transition: 0.3s;
+          }
+        }
+  
+        .buttomPlayStore:hover {
+          transform: scale(1.1);
+  
+        }
+  
+        .buttomAppStore:hover {
+          transform: scale(1.1);
+        }
+  
+  
+      }
+  
+    }
+  
+  }
+  
+  
+  
+ 
+  
+  
+  //footer-----------------------------------------------
+  
+  .footer{
+    width: 100%;
+    height: 300px;
+    background: #343434;
+  }
